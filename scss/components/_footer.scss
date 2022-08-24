@@ -1,0 +1,150 @@
+
+/*FOOTER*/
+/*ARMO SISTEMA DE GRILLAS DE BOOTSTRAP*/
+
+/* DEFINO ESTILO CONTAINER */
+.footer-container{
+    background-color: nth($colores, 1);
+    height: 400px;
+    color: nth($colores , 8);
+    
+/*ALINEO GRILLA*/
+    .footer-cuadricula{
+        margin: 0 8%;
+        padding-top: 8%;
+    
+        
+        /* ALINEO PRIMER COLUMA */
+        .col1{
+            text-align: left;
+
+            /* DEFINO ESTILO TITULO */
+            h3{
+            padding-bottom: 6%;
+            @extend %subtitulos-footer;
+        }
+        
+            /* DEFINO ESTILO LISTA */
+
+        .footer-lista{
+            list-style-type: none;
+            padding: 0px;
+            
+            
+            /* DEFINO ESTILO ITEMS */
+
+            .footer-item {
+                padding: 5px 0px;
+                
+                a{
+            text-decoration: none;
+            font-family: "Encode Sans Semi Condensed";
+            font-weight: 200;
+            font-size: 16px;
+            transition: all 0.2s ease-in;
+            color: nth($colores, 8);
+            
+        }
+        
+    }
+}
+
+}
+
+
+.col2{
+padding-left: 7%;
+border-left: 1px solid #fff;    
+border-right: 1px solid #fff;
+
+div{
+    
+ a{
+color: nth($colores , 8);
+text-decoration: none;
+@extend %subtitulos-footer;
+  }
+}
+
+
+
+.container-direccion{
+    margin-top: 2%;
+
+    .direccion{
+        color: nth($colores , 8);
+        text-decoration: none;
+        font-family: "Encode Sans Semi Condensed";
+        font-weight: 200;
+        font-size: 16px;
+    }
+}
+
+.tel{
+    margin-top: 4%;
+
+    a{
+        font-family: "Encode Sans Semi Condensed";
+        font-weight: 200;
+        font-size: 16px;
+    }
+}
+
+.mail{
+    margin-top: 0%; 
+    a{
+       @extend %texto-footer;
+    }
+}
+
+.cotiza-evento-container{
+    width: 200px;
+    height: 40px;
+    background-color: #fff;
+    font-family: "Encode Sans Semi Condensed";
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 6%;
+    text-align: center;
+    
+    
+     .cotiza-evento{
+    padding-top: 4%;
+      a{
+          color: nth($colores , 1);
+
+      }
+    }
+}
+}
+}
+
+.col3{
+    .logo,{
+        margin-right: 7%;
+        float: right;
+    }
+
+
+h4{
+    @extend %subtitulos-footer;
+    text-align: right;
+    margin-top: 42%;
+    }
+    h5{ 
+@extend %texto-footer;
+text-align: right;
+    }
+}
+ul{
+    li{
+        padding-top: 4%;
+        padding-left: 3%;
+        list-style-type: none;
+        display: inline-block;
+        float: right;
+    }
+}
+
+}

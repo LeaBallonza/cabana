@@ -1,0 +1,78 @@
+
+/* ESTILOS DE LA SECCIÓN CARROUSEL */
+.carousel .carousel-inner{ 
+    width: auto;
+    height: 550px;
+    display: flex;
+    align-content: center;
+}   
+
+/* DEFINO IMAGEN DE FONDO Y SU POSICIÓN */
+.carousel-inner {
+
+
+
+/* DEFINO POSICIÓN CAROUSEL CAPTION */
+.carousel-text-container{
+    display: flex;
+    justify-content: start;
+    margin-top: 170px;
+    }
+
+/* DEFINO EL ESTILO DEL TITULO */
+.titulo-slider{
+    @extend %titulos;
+    justify-content: left;
+    margin: 08% auto auto 6%;
+}
+
+/* DEFINO ESTILOS DEL PÁRRAFO DE SECTION SLIDER */
+.parrafo-slider {
+    width: 35%;
+    @extend %texto;
+    margin: 0% auto auto 6%;
+}
+
+/* DEFINO ESTILO IMG VER MÁS */
+.ver-mas{
+    margin: 1% auto auto 4.3%;
+}
+
+.ver-mas{
+
+
+a{
+    width: 100px;
+    height: 40px;
+    background-color: #7b9f8c;
+    @extend %subtitulos2;
+    text-decoration: none;
+    
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    }
+}
+
+    /* HOVER VER MÁS */
+.ver-mas a:hover{
+    background-color: #567671;
+    }
+
+}
+
+.carousel-inner .item1{
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../src/multimedia/Img/slider_01.jpg);
+}
+.item2{
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../src/multimedia/Img/slider_03.jpg);
+}
+
+.item3{
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../src/multimedia/Img/slider_04.jpg);
+}

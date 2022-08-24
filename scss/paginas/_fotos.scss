@@ -1,0 +1,64 @@
+
+/* PAGINA - FOTOS */
+
+
+/* CARATULA FOTOS */
+.caratula-fotos{
+    @extend %caratulas;
+    background-image: url(../src/multimedia/Img/fotos/slide_fotos.jpg);
+    }
+
+
+    .body-fotos{
+        @extend %bg-position;
+               
+    
+.container-tab{
+    padding: 4% 0% 0.5% 0%;
+    margin: 0 15% 0 15%;
+    border-bottom: 2px solid #142633;
+    background-color: #fff;
+    
+    .pestaña{
+        @extend %subtitulos;
+        color:black;
+        text-align: left;
+        padding: 0.5rem 1rem 0% 0%;
+        font-size: 20px;
+    }
+    .pestaña.active{
+        background-color: #fff;
+        color: grey;
+
+    }
+}
+
+/* DEFINO LAS PROPIEDADES DEL GRID */
+.container-fotos{
+padding: 3% 15% 7% 15%;
+
+.fotos-row{
+    padding-bottom: 2%;
+
+    .fotos-col{
+        position: relative;
+        
+        .fotos-item{
+         display: block;
+         width: 100%;
+        }
+        .fotos-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        
+    }
+    .fotos-overlay:hover{
+        opacity: 1;
+    }
+    }
+}
+}
+
+}

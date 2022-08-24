@@ -1,0 +1,44 @@
+/*HEADE*/
+
+/* DEFINO COLOR Y ALTURA DEL NAV*/
+.nav-header{
+	height: 80px;
+    background-color: #142633;
+}
+
+
+/* ESTILOS DEL LOGO*/
+.logo-header{
+        width: 200px;
+        margin-left: 75px;
+    }
+/* TIRO LA UL A LA DERECHA*/
+.lista1 {
+    float: right;
+    margin-right: 20px;
+    margin-top:  26px;
+}
+/* LA PONGO EN LINEA*/
+.header-item{
+    display: inline-block;
+    
+}
+
+/* DEFINO ESTILOS DE CADA ANCLA DE ESA UL */
+.header-item a{
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Encode Sans Semi Condensed";
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.2s ease-in;
+    
+}
+
+/* HOVER PARA HEADER */
+.header-item:hover a {
+    font-size: 16px;
+    padding: 8px;
+  
+}
+

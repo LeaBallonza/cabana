@@ -1,0 +1,70 @@
+
+/* PAGINA HISTORIA */
+
+
+    /* CARATULA HISTORIA */
+    .caratula-historia{
+        @extend %caratulas;
+        background-image: url(../src/multimedia/Img/historia/slide_historia.jpg);
+       }
+    
+    /* ESTILOS DE LA SECCIÓN hISTORIA */
+    .historia{    
+        @extend %bg-position;
+        
+        /* ALTO ANCHO Y BORDE DEL CONTAINER HISTORIA-CONTAINER */
+        .historia-container{
+            
+            padding: 4% 17%;
+            padding-bottom: 10%;
+
+            /* DEFINO EL ESTILO DEL TITULO */
+            .titulo-historia{
+                padding-top: 3%;
+                text-align: center;
+                width: auto;
+                @extend %titulos;
+                }
+            
+                /* DEFINO EL ESTILO DEL SUBTITULO */
+            .subtitulo-historia{
+             padding-top: 5%;
+             padding-bottom: 1%;
+             text-align: center;
+             width: auto;
+             @extend %subtitulos;
+             }
+            
+            /* DEFINO ESTILOS DEL PÁRRAFO DE SECTION SLIDER */
+            .parrafo-historia p{
+                width: auto;
+                text-align: center;
+                @extend %texto;
+                
+            }
+            .p3{
+                padding-top: 3%;
+            }
+        }
+        
+
+        /*DEFINO FORMATO DE GRID DE FOTOS*/
+        
+        .fotos-historia{
+            padding: 0 2% 8% 2%;
+            
+            .col-fotos{
+               padding: 0% 1%; 
+    
+               img{
+                   width: 100%;
+               }
+            }
+        }
+
+    }    
+    
+    
+    
+    
+    

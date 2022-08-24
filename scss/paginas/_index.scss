@@ -1,0 +1,164 @@
+
+
+
+/* SECTION BIENVENIDO- DEFINO ESTILO */
+.bienvenidos-body{
+
+    .bienvenidos-container{
+        /*NO ME TOMA LA IMAGEN DE FONDO*/
+        background-image: url("../../src/multimedia/Img/bg_trama.jpg");
+        background-size: auto;
+        background-position: center center;
+        height: 450px;
+
+    
+     
+        /* UBICACIÓN ISO LOS GRANADOS EN SECTION BIENVENIDOS */
+        .bienvenido-logo{
+         justify-items: center;
+         margin: 8% 0% 0% 48.5%;
+         
+        }
+        
+        /* UBICACIÓN TÍTULO SECCIÓN BIENVENIDOS */
+        .bienvenidos-titulo{
+            margin-top: 1%;
+            @extend %titulos;
+            text-align: center;
+        }
+        
+        /* UBICACIÓN PÁRRAFO SECCIÓN BIENVENIDOS */
+        .bienvenido-parrafo{
+            width: 50%;
+            text-align: center;
+            margin: 0% 26%;
+            @extend %texto;
+            
+        }
+    }
+}
+
+/*DEFINO PARAMETROS SERVICIOS INDEX*/
+
+.container-servicios-index{
+    padding: 3% 15%;
+    padding-bottom: 7%;
+    .row-servicios-index{
+
+        .servicios-index-col{
+            padding: 0 3%;
+          img{
+              padding-bottom: 2%;
+              display: block;
+              margin: auto;
+          } 
+          h4{
+              text-align: center;
+              @extend %subtitulos;
+          }
+          p{
+            margin-bottom: 7%;
+              text-align: center;
+              @extend %texto;
+          }
+            
+        }
+       .servicios-index-col2{
+        padding: 0 3%;
+         border-left: 1px solid #142633;
+         border-right: 1px solid #142633;
+         img{
+            padding-bottom: 2%;
+            display: block;
+            margin: auto;
+        } 
+        h4{
+            text-align: center;
+            @extend %subtitulos;
+        }
+        p{
+            margin-bottom: 7%;
+            text-align: center;
+            @extend %texto;
+        }
+       } 
+    }
+}
+
+/*DEFINO ESTILO CONSULTA*/
+.container-consultas-index{
+    padding: 3% 15% 0% 15%;
+    
+    /*POR QUÉ NO ME CARGA EL BG IMG*/
+    background-image: url("../../src/multimedia/Img/bg_trama.jpg");
+
+        /*TITULO PARAMETROS*/
+        h4{
+            text-align: center;
+            @extend %titulos;
+            padding-bottom: 1%;
+        }
+    /*DEFINO ESPACIO EN ROWS*/
+    .formulario-row{
+        padding-bottom: 2%;
+        .formulario.col{
+            padding: 4%;
+        }
+
+    }
+
+    /*DEFINO FORMATO BOTON*/
+    .formulario-row-button{
+        padding-bottom: 7%;
+ 
+        /* CÓMO CENTRAR AUTOMATICAMENTE?*/
+        padding-left: 46%;
+ 
+        
+        .formulario.col{
+             padding: 0% 15% 3% 15%;
+             padding: 4%;
+ 
+             }
+     }
+}
+
+/*DEFINO ESTILO INSTAGRAM*/
+
+  /*ROW 1 PARÁMETROS*/
+  
+  .container-ig{
+      
+    .row-ig1{
+    padding: 5% 15%;
+
+    /*TITULO PARAMETROS*/
+    h4{
+        text-align: center;
+        @extend %titulos;
+        padding-bottom: 1%;
+    }
+
+    /*DIRECCIÓN TEL, REDES Y MAIL PARÁMETROS*/
+   .redes{
+       text-align: center;
+       
+
+    }
+    ul{
+        list-style: none;
+        padding: 2% 0;
+        li{
+            display: inline-block;
+            
+        }
+    }
+    }
+}
+
+
+
+
+
+
+    

@@ -1,0 +1,102 @@
+
+
+/* PAGINA CONTACTO */
+
+
+
+/* CARATULA CONTACTO */
+.caratula-contacto{
+    @extend %caratulas;
+    background-image: url(../src/multimedia/Img/contacto/slide_contacto.jpg);
+    }
+
+/* ESTILOS DE LA SECCIÓN CONTACTO */
+.contacto{    
+    @extend %bg-position;
+    
+    /*ROW 1 PARÁMETROS*/
+    .contacto-row1{
+        padding: 5% 15% 2% 15%;
+
+        /*TITULO PARAMETROS*/
+        h4{
+            text-align: center;
+            @extend %titulos;
+            padding-bottom: 1%;
+        }
+
+        /*DIRECCIÓN TEL, REDES Y MAIL PARÁMETROS*/
+       .direccion, .tel, .mail, .redes{
+           text-align: center;
+           
+           a{
+                text-decoration: none;
+                @extend %texto;
+                color: nth($colores, 1);
+                
+            }
+
+        }
+        ul{
+            list-style: none;
+            padding: 2% 0;
+            li{
+                display: inline-block;
+            }
+        }
+        }
+   
+   /*ROW 2 PARAMETROS*/
+   .contacto-row2{
+    padding: 0% 20%;
+
+    /*TITULO PARAMETROS*/
+    h4{
+        text-align: center;
+        @extend %titulos;
+        padding-bottom: 3%;
+    }
+    /*DEFINO FORMULARIO INTERNO*/
+    
+    .formulario-row{
+        padding-bottom: 2%;
+        .formulario.col{
+            padding: 4%;
+        }
+    }
+/*DEFINO FORMATO BOTON*/
+    .formulario-row-button{
+       padding-bottom: 15%;
+
+       /* CÓMO CENTRAR AUTOMATICAMENTE?*/
+       padding-left: 46%;
+
+       
+       .formulario.col{
+            padding: 0% 15% 3% 15%;
+            padding: 4%;
+
+            }
+    }
+}   
+   /*ROW 3 PARAMETROS*/
+   .contacto-row3{
+      
+       }
+    iframe{
+        width: 100%;
+        height: 400px;
+    }
+    
+   }
+    
+  
+
+
+
+
+
+
+
+
+

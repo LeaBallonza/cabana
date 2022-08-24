@@ -1,0 +1,632 @@
+@charset "UTF-8";
+/* LISTAS COLORES*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.titulo-slider, .parrafo-slider, .header-item a, .footer-item {
+  color: #fff;
+}
+
+.ver-mas a {
+  color: #142633;
+}
+.ver-mas a:hover {
+  color: #7b9f8c;
+}
+
+.header-item a:hover, .footer-item:hover {
+  color: #b4cab1;
+}
+
+.fotostit, .titulo-historia, .subtitulo-historia, .parrafo-historia p, .proveedores, .bienvenidos-titulo, .bienvenido-parrafo {
+  color: #142633;
+}
+
+/* EXTENDS */
+.caratula-contacto, .caratula-fotos, .caratula-servicios, .caratula-historia {
+  height: 250px;
+  background-position: center center;
+  background-size: auto;
+}
+
+.contacto, .body-fotos, .body-servicios, .historia {
+  background-color: #fff;
+  background-size: auto;
+  background-position: center center;
+}
+
+.footer-container .col3 h4, .footer-container .footer-cuadricula .col2 div a, .footer-container .footer-cuadricula .col1 h3 {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer-container .col3 h5, .footer-container .footer-cuadricula .col2 .mail a {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.contacto .contacto-row2 h4, .contacto .contacto-row1 h4, .body-servicios .container-servicios .servicios-col2 h3, .historia .historia-container .titulo-historia, .container-ig .row-ig1 h4, .container-consultas-index h4, .bienvenidos-body .bienvenidos-container .bienvenidos-titulo, .carousel-inner .titulo-slider {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.body-fotos .container-tab .pestaña, .body-servicios .container-servicios .servicios-col2 h4, .historia .historia-container .subtitulo-historia, .container-servicios-index .row-servicios-index .servicios-index-col2 h4, .container-servicios-index .row-servicios-index .servicios-index-col h4 {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.body-servicios .container-servicios .servicios-col2 a h5, .carousel-inner .ver-mas a {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.contacto .contacto-row1 .direccion a, .contacto .contacto-row1 .tel a, .contacto .contacto-row1 .mail a, .contacto .contacto-row1 .redes a, .body-servicios .container-servicios .servicios-col2 ul, .body-servicios .container-servicios .servicios-col2 p, .historia .historia-container .parrafo-historia p, .container-servicios-index .row-servicios-index .servicios-index-col2 p, .container-servicios-index .row-servicios-index .servicios-index-col p, .bienvenidos-body .bienvenidos-container .bienvenido-parrafo, .carousel-inner .parrafo-slider {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*HEADE*/
+/* DEFINO COLOR Y ALTURA DEL NAV*/
+.nav-header {
+  height: 80px;
+  background-color: #142633;
+}
+
+/* ESTILOS DEL LOGO*/
+.logo-header {
+  width: 200px;
+  margin-left: 75px;
+}
+
+/* TIRO LA UL A LA DERECHA*/
+.lista1 {
+  float: right;
+  margin-right: 20px;
+  margin-top: 26px;
+}
+
+/* LA PONGO EN LINEA*/
+.header-item {
+  display: inline-block;
+}
+
+/* DEFINO ESTILOS DE CADA ANCLA DE ESA UL */
+.header-item a {
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 400;
+  font-size: 15px;
+  transition: all 0.2s ease-in;
+}
+
+/* HOVER PARA HEADER */
+.header-item:hover a {
+  font-size: 16px;
+  padding: 8px;
+}
+
+/*FOOTER*/
+/*ARMO SISTEMA DE GRILLAS DE BOOTSTRAP*/
+/* DEFINO ESTILO CONTAINER */
+.footer-container {
+  background-color: #142633;
+  height: 400px;
+  color: #fff;
+  /*ALINEO GRILLA*/
+}
+.footer-container .footer-cuadricula {
+  margin: 0 8%;
+  padding-top: 8%;
+  /* ALINEO PRIMER COLUMA */
+}
+.footer-container .footer-cuadricula .col1 {
+  text-align: left;
+  /* DEFINO ESTILO TITULO */
+  /* DEFINO ESTILO LISTA */
+}
+.footer-container .footer-cuadricula .col1 h3 {
+  padding-bottom: 6%;
+}
+.footer-container .footer-cuadricula .col1 .footer-lista {
+  list-style-type: none;
+  padding: 0px;
+  /* DEFINO ESTILO ITEMS */
+}
+.footer-container .footer-cuadricula .col1 .footer-lista .footer-item {
+  padding: 5px 0px;
+}
+.footer-container .footer-cuadricula .col1 .footer-lista .footer-item a {
+  text-decoration: none;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 200;
+  font-size: 16px;
+  transition: all 0.2s ease-in;
+  color: #fff;
+}
+.footer-container .footer-cuadricula .col2 {
+  padding-left: 7%;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.footer-container .footer-cuadricula .col2 div a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-container .footer-cuadricula .col2 .container-direccion {
+  margin-top: 2%;
+}
+.footer-container .footer-cuadricula .col2 .container-direccion .direccion {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 200;
+  font-size: 16px;
+}
+.footer-container .footer-cuadricula .col2 .tel {
+  margin-top: 4%;
+}
+.footer-container .footer-cuadricula .col2 .tel a {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 200;
+  font-size: 16px;
+}
+.footer-container .footer-cuadricula .col2 .mail {
+  margin-top: 0%;
+}
+.footer-container .footer-cuadricula .col2 .cotiza-evento-container {
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 6%;
+  text-align: center;
+}
+.footer-container .footer-cuadricula .col2 .cotiza-evento-container .cotiza-evento {
+  padding-top: 4%;
+}
+.footer-container .footer-cuadricula .col2 .cotiza-evento-container .cotiza-evento a {
+  color: #142633;
+}
+.footer-container .col3 .logo {
+  margin-right: 7%;
+  float: right;
+}
+.footer-container .col3 h4 {
+  text-align: right;
+  margin-top: 42%;
+}
+.footer-container .col3 h5 {
+  text-align: right;
+}
+.footer-container ul li {
+  padding-top: 4%;
+  padding-left: 3%;
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+}
+
+/* ESTILOS DE LA SECCIÓN CARROUSEL */
+.carousel .carousel-inner {
+  width: auto;
+  height: 550px;
+  display: flex;
+  align-content: center;
+}
+
+/* DEFINO IMAGEN DE FONDO Y SU POSICIÓN */
+.carousel-inner {
+  /* DEFINO POSICIÓN CAROUSEL CAPTION */
+  /* DEFINO EL ESTILO DEL TITULO */
+  /* DEFINO ESTILOS DEL PÁRRAFO DE SECTION SLIDER */
+  /* DEFINO ESTILO IMG VER MÁS */
+  /* HOVER VER MÁS */
+}
+.carousel-inner .carousel-text-container {
+  display: flex;
+  justify-content: start;
+  margin-top: 170px;
+}
+.carousel-inner .titulo-slider {
+  justify-content: left;
+  margin: 8% auto auto 6%;
+}
+.carousel-inner .parrafo-slider {
+  width: 35%;
+  margin: 0% auto auto 6%;
+}
+.carousel-inner .ver-mas {
+  margin: 1% auto auto 4.3%;
+}
+.carousel-inner .ver-mas a {
+  width: 100px;
+  height: 40px;
+  background-color: #7b9f8c;
+  text-decoration: none;
+  margin-top: 1.5%;
+  margin-left: 1.5%;
+}
+.carousel-inner .ver-mas a:hover {
+  background-color: #567671;
+}
+
+.carousel-inner .item1 {
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../src/multimedia/Img/slider_01.jpg);
+}
+
+.item2 {
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../src/multimedia/Img/slider_03.jpg);
+}
+
+.item3 {
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../src/multimedia/Img/slider_04.jpg);
+}
+
+/* AGERGO BOTON DE WS CON LINK AL CELULAR DE CONTACTO */
+.whatsapp {
+  position: fixed;
+  bottom: 6%;
+  top: 91%;
+  margin-left: 95.5%;
+}
+
+/* SECTION BIENVENIDO- DEFINO ESTILO */
+.bienvenidos-body .bienvenidos-container {
+  /*NO ME TOMA LA IMAGEN DE FONDO*/
+  background-image: url("../../src/multimedia/Img/bg_trama.jpg");
+  background-size: auto;
+  background-position: center center;
+  height: 450px;
+  /* UBICACIÓN ISO LOS GRANADOS EN SECTION BIENVENIDOS */
+  /* UBICACIÓN TÍTULO SECCIÓN BIENVENIDOS */
+  /* UBICACIÓN PÁRRAFO SECCIÓN BIENVENIDOS */
+}
+.bienvenidos-body .bienvenidos-container .bienvenido-logo {
+  justify-items: center;
+  margin: 8% 0% 0% 48.5%;
+}
+.bienvenidos-body .bienvenidos-container .bienvenidos-titulo {
+  margin-top: 1%;
+  text-align: center;
+}
+.bienvenidos-body .bienvenidos-container .bienvenido-parrafo {
+  width: 50%;
+  text-align: center;
+  margin: 0% 26%;
+}
+
+/*DEFINO PARAMETROS SERVICIOS INDEX*/
+.container-servicios-index {
+  padding: 3% 15%;
+  padding-bottom: 7%;
+}
+.container-servicios-index .row-servicios-index .servicios-index-col {
+  padding: 0 3%;
+}
+.container-servicios-index .row-servicios-index .servicios-index-col img {
+  padding-bottom: 2%;
+  display: block;
+  margin: auto;
+}
+.container-servicios-index .row-servicios-index .servicios-index-col h4 {
+  text-align: center;
+}
+.container-servicios-index .row-servicios-index .servicios-index-col p {
+  margin-bottom: 7%;
+  text-align: center;
+}
+.container-servicios-index .row-servicios-index .servicios-index-col2 {
+  padding: 0 3%;
+  border-left: 1px solid #142633;
+  border-right: 1px solid #142633;
+}
+.container-servicios-index .row-servicios-index .servicios-index-col2 img {
+  padding-bottom: 2%;
+  display: block;
+  margin: auto;
+}
+.container-servicios-index .row-servicios-index .servicios-index-col2 h4 {
+  text-align: center;
+}
+.container-servicios-index .row-servicios-index .servicios-index-col2 p {
+  margin-bottom: 7%;
+  text-align: center;
+}
+
+/*DEFINO ESTILO CONSULTA*/
+.container-consultas-index {
+  padding: 3% 15% 0% 15%;
+  /*POR QUÉ NO ME CARGA EL BG IMG*/
+  background-image: url("../../src/multimedia/Img/bg_trama.jpg");
+  /*TITULO PARAMETROS*/
+  /*DEFINO ESPACIO EN ROWS*/
+  /*DEFINO FORMATO BOTON*/
+}
+.container-consultas-index h4 {
+  text-align: center;
+  padding-bottom: 1%;
+}
+.container-consultas-index .formulario-row {
+  padding-bottom: 2%;
+}
+.container-consultas-index .formulario-row .formulario.col {
+  padding: 4%;
+}
+.container-consultas-index .formulario-row-button {
+  padding-bottom: 7%;
+  /* CÓMO CENTRAR AUTOMATICAMENTE?*/
+  padding-left: 46%;
+}
+.container-consultas-index .formulario-row-button .formulario.col {
+  padding: 0% 15% 3% 15%;
+  padding: 4%;
+}
+
+/*DEFINO ESTILO INSTAGRAM*/
+/*ROW 1 PARÁMETROS*/
+.container-ig .row-ig1 {
+  padding: 5% 15%;
+  /*TITULO PARAMETROS*/
+  /*DIRECCIÓN TEL, REDES Y MAIL PARÁMETROS*/
+}
+.container-ig .row-ig1 h4 {
+  text-align: center;
+  padding-bottom: 1%;
+}
+.container-ig .row-ig1 .redes {
+  text-align: center;
+}
+.container-ig .row-ig1 ul {
+  list-style: none;
+  padding: 2% 0;
+}
+.container-ig .row-ig1 ul li {
+  display: inline-block;
+}
+
+/* PAGINA HISTORIA */
+/* CARATULA HISTORIA */
+.caratula-historia {
+  background-image: url(../src/multimedia/Img/historia/slide_historia.jpg);
+}
+
+/* ESTILOS DE LA SECCIÓN hISTORIA */
+.historia {
+  /* ALTO ANCHO Y BORDE DEL CONTAINER HISTORIA-CONTAINER */
+  /*DEFINO FORMATO DE GRID DE FOTOS*/
+}
+.historia .historia-container {
+  padding: 4% 17%;
+  padding-bottom: 10%;
+  /* DEFINO EL ESTILO DEL TITULO */
+  /* DEFINO EL ESTILO DEL SUBTITULO */
+  /* DEFINO ESTILOS DEL PÁRRAFO DE SECTION SLIDER */
+}
+.historia .historia-container .titulo-historia {
+  padding-top: 3%;
+  text-align: center;
+  width: auto;
+}
+.historia .historia-container .subtitulo-historia {
+  padding-top: 5%;
+  padding-bottom: 1%;
+  text-align: center;
+  width: auto;
+}
+.historia .historia-container .parrafo-historia p {
+  width: auto;
+  text-align: center;
+}
+.historia .historia-container .p3 {
+  padding-top: 3%;
+}
+.historia .fotos-historia {
+  padding: 0 2% 8% 2%;
+}
+.historia .fotos-historia .col-fotos {
+  padding: 0% 1%;
+}
+.historia .fotos-historia .col-fotos img {
+  width: 100%;
+}
+
+/* PAGINA - SERVICIOS*/
+/* TAMAÑO CARATULA SERVICIOS */
+.caratula-servicios {
+  background-image: url(../src/multimedia/Img/servicios/slide_servicios.jpg);
+  margin-bottom: 50px;
+}
+
+.body-servicios {
+  /*DEFINO PROPIEDADES DEL CONTAINER*/
+}
+.body-servicios .container-servicios {
+  padding: 3% 14% 7% 14%;
+  /*  TAMAÑO DEL CONTENEDOR DE SERVICIOS */
+  /*DEFINO PARAMETROS COL 2*/
+}
+.body-servicios .container-servicios .row-servicios1, .body-servicios .container-servicios .row-servicios2 {
+  padding: 7% 0 3% 0;
+  border-bottom: 2px solid #142633;
+}
+.body-servicios .container-servicios .row-servicios3 {
+  padding: 7% 0 3% 0;
+}
+.body-servicios .container-servicios .servicios-col1 {
+  /*DEFINO PROPIEDADES IMAGEN*/
+}
+.body-servicios .container-servicios .servicios-col1 img {
+  width: 100%;
+}
+.body-servicios .container-servicios .servicios-col2 {
+  padding-left: 1.5%;
+  /*PROPIEDADES LOGO SERVICIOS*/
+  /*DEFINO PARAMETROS H3*/
+  /* DEFINO PADDING PARA LAS 3 SECCIONES*/
+  /*DEFINO PARÁMETROS PÁRRAFO*/
+  /*DEFINO PARAMETROS SUBTITULO*/
+  /*ESTILO DE LINK PAG WEB*/
+  /*DEFINO PARAMETROS LISTA*/
+}
+.body-servicios .container-servicios .servicios-col2 img {
+  width: 20%;
+}
+.body-servicios .container-servicios .servicios-col2 h3 {
+  padding-left: 2%;
+}
+.body-servicios .container-servicios .servicios-col2 p, .body-servicios .container-servicios .servicios-col2 h4 {
+  padding-left: 2%;
+}
+.body-servicios .container-servicios .servicios-col2 p {
+  padding-bottom: 3%;
+}
+.body-servicios .container-servicios .servicios-col2 h4 {
+  padding-bottom: 1%;
+}
+.body-servicios .container-servicios .servicios-col2 a {
+  text-decoration: none;
+}
+.body-servicios .container-servicios .servicios-col2 a h5 {
+  padding-left: 2%;
+  color: #142633;
+}
+.body-servicios .container-servicios .servicios-col2 ul {
+  padding-left: 5%;
+}
+/* PAGINA - FOTOS */
+/* CARATULA FOTOS */
+.caratula-fotos {
+  background-image: url(../src/multimedia/Img/fotos/slide_fotos.jpg);
+}
+
+.body-fotos {
+  /* DEFINO LAS PROPIEDADES DEL GRID */
+}
+.body-fotos .container-tab {
+  padding: 4% 0% 0.5% 0%;
+  margin: 0 15% 0 15%;
+  border-bottom: 2px solid #142633;
+  background-color: #fff;
+}
+.body-fotos .container-tab .pestaña {
+  color: black;
+  text-align: left;
+  padding: 0.5rem 1rem 0% 0%;
+  font-size: 20px;
+}
+.body-fotos .container-tab .pestaña.active {
+  background-color: #fff;
+  color: grey;
+}
+.body-fotos .container-fotos {
+  padding: 3% 15% 7% 15%;
+}
+.body-fotos .container-fotos .fotos-row {
+  padding-bottom: 2%;
+}
+.body-fotos .container-fotos .fotos-row .fotos-col {
+  position: relative;
+}
+.body-fotos .container-fotos .fotos-row .fotos-col .fotos-item {
+  display: block;
+  width: 100%;
+}
+.body-fotos .container-fotos .fotos-row .fotos-col .fotos-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.body-fotos .container-fotos .fotos-row .fotos-col .fotos-overlay:hover {
+  opacity: 1;
+}
+
+/* PAGINA CONTACTO */
+/* CARATULA CONTACTO */
+.caratula-contacto {
+  background-image: url(../src/multimedia/Img/contacto/slide_contacto.jpg);
+}
+
+/* ESTILOS DE LA SECCIÓN CONTACTO */
+.contacto {
+  /*ROW 1 PARÁMETROS*/
+  /*ROW 2 PARAMETROS*/
+  /*ROW 3 PARAMETROS*/
+}
+.contacto .contacto-row1 {
+  padding: 5% 15% 2% 15%;
+  /*TITULO PARAMETROS*/
+  /*DIRECCIÓN TEL, REDES Y MAIL PARÁMETROS*/
+}
+.contacto .contacto-row1 h4 {
+  text-align: center;
+  padding-bottom: 1%;
+}
+.contacto .contacto-row1 .direccion, .contacto .contacto-row1 .tel, .contacto .contacto-row1 .mail, .contacto .contacto-row1 .redes {
+  text-align: center;
+}
+.contacto .contacto-row1 .direccion a, .contacto .contacto-row1 .tel a, .contacto .contacto-row1 .mail a, .contacto .contacto-row1 .redes a {
+  text-decoration: none;
+  color: #142633;
+}
+.contacto .contacto-row1 ul {
+  list-style: none;
+  padding: 2% 0;
+}
+.contacto .contacto-row1 ul li {
+  display: inline-block;
+}
+.contacto .contacto-row2 {
+  padding: 0% 20%;
+  /*TITULO PARAMETROS*/
+  /*DEFINO FORMULARIO INTERNO*/
+  /*DEFINO FORMATO BOTON*/
+}
+.contacto .contacto-row2 h4 {
+  text-align: center;
+  padding-bottom: 3%;
+}
+.contacto .contacto-row2 .formulario-row {
+  padding-bottom: 2%;
+}
+.contacto .contacto-row2 .formulario-row .formulario.col {
+  padding: 4%;
+}
+.contacto .contacto-row2 .formulario-row-button {
+  padding-bottom: 15%;
+  /* CÓMO CENTRAR AUTOMATICAMENTE?*/
+  padding-left: 46%;
+}
+.contacto .contacto-row2 .formulario-row-button .formulario.col {
+  padding: 0% 15% 3% 15%;
+  padding: 4%;
+}
+.contacto iframe {
+  width: 100%;
+  height: 400px;
+}
+
+/*Google Gont*/
+* {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,38 @@
+
+$colores:
+#142633,
+#567671,
+#7b9f8c,
+#b4cab1,
+#dfe0b6,
+#d8cebf,
+#eddabe,
+#fff;
+
+
+/* LISTAS COLORES*/
+
+.titulo-slider, .parrafo-slider, .header-item a , .footer-item{
+    color: nth($colores,8);
+}
+
+.ver-mas{
+    a{
+        color: nth($colores, 1);
+
+        &:hover{
+            color: nth($colores, 3);
+        }
+    }
+}
+
+.header-item a , .footer-item{
+    &:hover{
+        color: nth($colores, 4);
+}
+}
+
+
+.fotostit, .titulo-historia, .subtitulo-historia,.parrafo-historia p, .proveedores, .bienvenidos-titulo, .bienvenido-parrafo {
+    color: nth($colores, 1);
+}

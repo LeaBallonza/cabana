@@ -1,0 +1,547 @@
+@charset "UTF-8";
+/* LISTAS COLORES*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.titulo-slider, .parrafo-slider, .header-item a, .footer-item {
+  color: #fff;
+}
+
+.ver-mas a {
+  color: #142633;
+}
+
+.ver-mas a:hover {
+  color: #7b9f8c;
+}
+
+.header-item a:hover, .footer-item:hover {
+  color: #b4cab1;
+}
+
+.fotostit, .titulo-historia, .subtitulo-historia, .parrafo-historia p, .proveedores, .bienvenidos-titulo, .bienvenido-parrafo {
+  color: #142633;
+}
+
+/* EXTENDS */
+.caratula-historia, .caratula-servicios, .caratula-fotos, .caratula-contacto {
+  height: 250px;
+  background-position: center center;
+  background-size: auto;
+}
+
+.bienvenidos-container, .historia, .body- servicios, .body-fotos, .contacto {
+  background-color: #fff;
+  background-size: auto;
+  background-position: center center;
+}
+
+/*HEADE*/
+/* DEFINO COLOR Y ALTURA DEL NAV*/
+.nav-header {
+  height: 80px;
+  background-color: #142633;
+}
+
+/* ESTILOS DEL LOGO*/
+.logo-header {
+  width: 200px;
+  margin-left: 75px;
+}
+
+/* TIRO LA UL A LA DERECHA*/
+.lista1 {
+  float: right;
+  margin-right: 20px;
+  margin-top: 26px;
+}
+
+/* LA PONGO EN LINEA*/
+.header-item {
+  display: inline-block;
+}
+
+/* DEFINO ESTILOS DE CADA ANCLA DE ESA UL */
+.header-item a {
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 400;
+  font-size: 15px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/* HOVER PARA HEADER */
+.header-item:hover a {
+  font-size: 16px;
+  padding: 8px;
+}
+
+/*FOOTER*/
+/*ARMO SISTEMA DE GRILLAS DE BOOTSTRAP*/
+/* DEFINO ESTILO CONTAINER */
+.footer-container {
+  background-color: #142633;
+  height: 400px;
+  color: #fff;
+  /*ALINEO GRILLA*/
+}
+
+.footer-container .footer-cuadricula {
+  padding-left: 12%;
+  /* ALINEO PRIMER COLUMNA */
+}
+
+.footer-container .footer-cuadricula .col1 {
+  text-align: left;
+  padding-top: 3%;
+  padding-left: 8%;
+  /* DEFINO ESTILO TITULO */
+  /* DEFINO ESTILO LISTA */
+}
+
+.footer-container .footer-cuadricula .col1 h3 {
+  padding-top: 40%;
+  padding-bottom: 6%;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.footer-container .footer-cuadricula .col1 .footer-lista {
+  list-style-type: none;
+  padding: 0px;
+  /* DEFINO ESTILO ITEMS */
+}
+
+.footer-container .footer-cuadricula .col1 .footer-lista .footer-item {
+  padding: 5px 0px;
+}
+
+.footer-container .footer-cuadricula .col1 .footer-lista .footer-item a {
+  text-decoration: none;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 200;
+  font-size: 17px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: #fff;
+}
+
+.footer-container .footer-cuadricula .col2 div {
+  margin-top: 23%;
+}
+
+.footer-container .footer-cuadricula .col2 div a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.footer-container .footer-cuadricula .col2 .container-direccion {
+  margin-top: 2%;
+}
+
+.footer-container .footer-cuadricula .col2 .container-direccion .direccion {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.footer-container .footer-cuadricula .col2 .tel {
+  margin-top: 4%;
+}
+
+.footer-container .footer-cuadricula .col2 .tel a {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.footer-container .footer-cuadricula .col2 .mail {
+  margin-top: 0%;
+}
+
+.footer-container .footer-cuadricula .col2 .mail a {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.footer-container .footer-cuadricula .col2 .cotiza-evento {
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 6%;
+  text-align: center;
+}
+
+.footer-container .footer-cuadricula .col2 .cotiza-evento a {
+  color: #142633;
+}
+
+/* ESTILOS DE LA SECCIÓN CARROUSEL */
+.carousel .carousel-inner {
+  width: auto;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+/* DEFINO IMAGEN DE FONDO Y SU POSICIÓN */
+.carousel-inner .item1 {
+  background-image: url(../src/multimedia/Img/slider_01.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+/* DEFINO POSICIÓN CAROUSEL CAPTION */
+.carousel-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 170px;
+}
+
+/* DEFINO EL ESTILO DEL TITULO */
+.titulo-slider {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 55px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 08% auto auto 6%;
+}
+
+/* DEFINO ESTILOS DEL PÁRRAFO DE SECTION SLIDER */
+.parrafo-slider {
+  width: 35%;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0% auto auto 6%;
+}
+
+/* DEFINO ESTILO IMG VER MÁS */
+.ver-mas {
+  margin: 1% auto auto 4.3%;
+}
+
+.ver-mas a {
+  width: 100px;
+  height: 40px;
+  background-color: #7b9f8c;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* HOVER VER MÁS */
+.ver-mas a:hover {
+  background-color: #567671;
+}
+
+/* .carousel-indicators{
+        display: flex;
+        align-content: flex-start;
+    } */
+/* DEFINO ESTILO DE CAROUSEL INDICATORS */
+.carousel-indicators button {
+  width: 10px;
+  height: 30px;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+/* AGERGO BOTON DE WS CON LINK AL CELULAR DE CONTACTO */
+.whatsapp {
+  position: fixed;
+  bottom: 6%;
+  top: 91%;
+  margin-left: 95.5%;
+}
+
+/* SECTION BIENVENIDO- DEFINO ESTILO */
+.bienvenidos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 450px;
+}
+
+/* UBICACIÓN ISO LOS GRANADOS EN SECTION BIENVENIDOS */
+.bienvenido-logo {
+  justify-items: center;
+  margin: 8% 0% 0% 48.5%;
+}
+
+/* UBICACIÓN TÍTULO SECCIÓN BIENVENIDOS */
+.bienvenidos-titulo {
+  margin-top: 1%;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* UBICACIÓN PÁRRAFO SECCIÓN BIENVENIDOS */
+.bienvenido-parrafo {
+  width: 50%;
+  text-align: center;
+  margin: 0% 26%;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* PAGINA HISTORIA */
+/* NO ME AGARRA EL MEDIA QUERY !! */
+@media screen and (max-width: 480px) {
+  .historia-container {
+    width: 90%;
+    border: none;
+    margin: 1% 8%;
+    border-radius: none;
+  }
+}
+
+/* CARATULA HISTORIA */
+.caratula-historia {
+  background-image: url(../src/multimedia/Img/historia/slide_historia.jpg);
+}
+
+/* ESTILOS DE LA SECCIÓN hISTORIA */
+.historia {
+  /* ALTO ANCHO Y BORDE DEL CONTAINER HISTORIA */
+  /*DEFINO FORMATO DE GRID DE FOTOS*/
+}
+
+.historia .historia-container {
+  padding: 4% 17%;
+  padding-bottom: 10%;
+  /* DEFINO EL ESTILO DEL TITULO */
+  /* DEFINO EL ESTILO DEL SUBTITULO */
+  /* DEFINO ESTILOS DEL PÁRRAFO DE SECTION SLIDER */
+}
+
+.historia .historia-container .titulo-historia {
+  padding-top: 3%;
+  text-align: center;
+  width: auto;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.historia .historia-container .subtitulo-historia {
+  padding-top: 5%;
+  padding-bottom: 1%;
+  text-align: center;
+  width: auto;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.historia .historia-container .parrafo-historia p {
+  width: auto;
+  text-align: center;
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.historia .historia-container .p3 {
+  padding-top: 3%;
+}
+
+.fotos-historia {
+  width: auto;
+}
+
+.fotos-historia .div {
+  padding: 5px;
+  padding-bottom: 10%;
+}
+
+/* PAGINA - SERVICIOS*/
+/* TAMAÑO CARATULA SERVICIOS */
+.caratula-servicios {
+  background-image: url(../src/multimedia/Img/servicios/slide_servicios.jpg);
+  margin-bottom: 50px;
+}
+
+.body- servicios {
+  /*  TAMAÑO DEL CONTENEDOR DE SERVICIOS */
+}
+
+.body- servicios .proveedores-container {
+  width: 90%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body- servicios .proveedores {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.body- servicios .col .proveedores-item {
+  padding: 20px;
+  margin: 30px 50px;
+}
+
+/* PAGINA - FOTOS */
+/* CARATULA FOTOS */
+.caratula-fotos {
+  background-image: url(../src/multimedia/Img/fotos/slide_fotos.jpg);
+}
+
+.body-fotos {
+  /* DEFINO LAS PROPIEDADES DEL GRID */
+  /* HOVER PARA LAS FOTOS */
+}
+
+.body-fotos .fotostit {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.body-fotos .cuadrillaFotos {
+  display: -ms-grid;
+  display: grid;
+  border: 2px solid #242633;
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  width: 600px;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-left: 375px;
+  padding: 50px;
+  margin-bottom: 12%;
+  /* DEFINO DISPOSICIÓN EN CUADRILLA */
+      grid-template-areas: "foto1 foto1 foto1 foto1 foto1 foto1" "foto1 foto1 foto1 foto1 foto1 foto1" "foto1 foto1 foto1 foto1 foto1 foto1"  "foto1 foto1 foto1 foto1 foto1 foto1" "foto2 foto2 foto3 foto3 foto4 foto4" "foto2 foto2 foto3 foto3 foto4 foto4" "foto5 foto5 foto6 foto6 foto7 foto7" "foto5 foto5 foto6 foto6 foto7 foto7";
+}
+
+.body-fotos .foto:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.body-fotos .foto:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: foto1;
+}
+
+.body-fotos .foto:nth-child(2) {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: foto2;
+}
+
+.body-fotos .foto:nth-child(3) {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: foto3;
+}
+
+.body-fotos .foto:nth-child(4) {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: foto4;
+}
+
+.body-fotos .foto:nth-child(5) {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: foto5;
+}
+
+.body-fotos .foto:nth-child(6) {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: foto6;
+}
+
+.body-fotos .foto:nth-child(7) {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: foto7;
+}
+
+/* PAGINA CONTACTO */
+/* CARATULA CONTACTO */
+.caratula-contacto {
+  background-image: url(../src/multimedia/Img/contacto/slide_contacto.jpg);
+}
+
+/* ESTILOS DE LA SECCIÓN CONTACTO */
+.contacto {
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+/* FOOTER */
+/*Google Gont*/
+* {
+  font-family: "Encode Sans Semi Condensed";
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

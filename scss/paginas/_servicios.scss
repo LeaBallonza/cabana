@@ -1,0 +1,95 @@
+
+/* PAGINA - SERVICIOS*/
+
+
+
+
+
+/* TAMAÑO CARATULA SERVICIOS */
+.caratula-servicios {
+    @extend %caratulas;
+    background-image: url(../src/multimedia/Img/servicios/slide_servicios.jpg);
+    margin-bottom: 50px;
+}
+    
+.body-servicios{
+    @extend %bg-position;
+
+
+    /*DEFINO PROPIEDADES DEL CONTAINER*/
+.container-servicios{
+    padding: 3% 14% 7% 14%;
+    
+    
+    /*  TAMAÑO DEL CONTENEDOR DE SERVICIOS */
+    .row-servicios1, .row-servicios2{
+        padding: 7% 0 3% 0;
+        border-bottom: 2px solid #142633;
+    }
+    .row-servicios3{
+        padding: 7% 0 3% 0;
+    }
+
+    .servicios-col1{
+        
+        /*DEFINO PROPIEDADES IMAGEN*/
+        img{
+            width: 100%; 
+                   
+        }
+    }
+    
+    /*DEFINO PARAMETROS COL 2*/
+    .servicios-col2{
+        padding-left: 1.5%;
+
+        /*PROPIEDADES LOGO SERVICIOS*/
+     img{
+         width: 20%;
+     }
+
+     /*DEFINO PARAMETROS H3*/
+     h3{
+         padding-left: 2%;
+         @extend %titulos;
+     }
+
+     /* DEFINO PADDING PARA LAS 3 SECCIONES*/
+     p, h4{
+         padding-left: 2%;
+     }
+
+     /*DEFINO PARÁMETROS PÁRRAFO*/
+     p{
+         padding-bottom: 3%;
+         @extend %texto;
+     }
+
+     /*DEFINO PARAMETROS SUBTITULO*/
+     h4{
+         padding-bottom: 1%;
+         @extend %subtitulos;
+     }
+
+     /*ESTILO DE LINK PAG WEB*/
+     a{
+        text-decoration: none;
+     
+     h5{
+       
+        padding-left: 2%;
+        @extend %subtitulos2;
+        color: #142633;
+     }
+    }
+/*DEFINO PARAMETROS LISTA*/
+ul{
+    padding-left: 5%;
+    @extend %texto;
+
+    li{
+    }
+ }
+}
+}
+}
