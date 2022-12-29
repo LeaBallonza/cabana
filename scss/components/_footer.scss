@@ -3,9 +3,13 @@
 /*ARMO SISTEMA DE GRILLAS DE BOOTSTRAP*/
 
 /* DEFINO ESTILO CONTAINER */
+
+
+
+
 .footer-container{
     background-color: nth($colores, 1);
-    height: 400px;
+    height: auto;
     color: nth($colores , 8);
     
 /*ALINEO GRILLA*/
@@ -121,7 +125,7 @@ text-decoration: none;
 }
 
 .col3{
-    .logo,{
+    .logo{
         margin-right: 7%;
         float: right;
     }
@@ -143,8 +147,18 @@ ul{
         padding-left: 3%;
         list-style-type: none;
         display: inline-block;
-        float: right;
+       /* float: right;*/
     }
 }
 
+}
+
+
+/*CEL*/
+@media (max-width: 576px) { 
+    .footer-container{
+       background-color: nth($colores, 1);
+       height: auto;
+       color: nth($colores , 8);
+   }
 }

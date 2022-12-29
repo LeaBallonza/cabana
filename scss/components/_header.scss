@@ -1,8 +1,8 @@
-/*HEADE*/
+/*HEADER*/
 
 /* DEFINO COLOR Y ALTURA DEL NAV*/
 .nav-header{
-	height: 80px;
+	
     background-color: #142633;
 }
 
@@ -17,12 +17,15 @@
     float: right;
     margin-right: 20px;
     margin-top:  26px;
+    
 }
 /* LA PONGO EN LINEA*/
 .header-item{
     display: inline-block;
     
 }
+
+  
 
 /* DEFINO ESTILOS DE CADA ANCLA DE ESA UL */
 .header-item a{
@@ -42,3 +45,18 @@
   
 }
 
+
+/*CEL*/
+@media (max-width: 576px) { 
+    
+    .lista1 {
+      justify-content: center;
+        
+    }
+
+    .logo-header{
+        position: sticky;
+        width: 200px;
+        
+    }
+ }
