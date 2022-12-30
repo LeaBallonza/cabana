@@ -5,7 +5,7 @@
 .bienvenidos-body{
 
     .bienvenidos-container{
-        /*NO ME TOMA LA IMAGEN DE FONDO*/
+        /*IMAGEN DE FONDO DE BIENVENIDOS*/
         background-image: url("../../src/multimedia/Img/bg_trama.jpg");
         background-size: auto;
         background-position: center center;
@@ -90,7 +90,7 @@
     padding: 3% 15% 0% 15%;
     
     /*POR QUÉ NO ME CARGA EL BG IMG*/
-    background-image: url("../../src/multimedia/Img/bg_trama.jpg");
+    background-image: url("../../src/multimedia/Img/bg_verde_claro.jpg");
 
         /*TITULO PARAMETROS*/
         h4{
@@ -103,26 +103,32 @@
         padding-bottom: 2%;
         .formulario.col{
             padding: 4%;
+            padding-bottom: 2%;
         }
 
     }
 
     /*DEFINO FORMATO BOTON*/
     .formulario-row-button{
-        padding-bottom: 7%;
- 
-        /* CÓMO CENTRAR AUTOMATICAMENTE?*/
-        padding-left: 46%;
- 
-        
-        .formulario.col{
-             padding: 0% 15% 3% 15%;
-             padding: 4%;
- 
-             }
+      align-items: center;
+      
+     }
+     .formulario-row-button{
+        text-align: center;
+        background-color: red;
      }
 }
-
+/*Color de fondo de los inputs del formulario y bordes negros*/
+.form-control{
+    background-color: #dfe0b6;
+    
+    border: 1px solid;
+ }
+ /*BOTON ENVIAR, COLOR DE FONDO Y LETRA*/
+ .btn-azul{
+    color: white;
+    background-color: #142633;
+ }
 /*DEFINO ESTILO INSTAGRAM*/
 
   /*ROW 1 PARÁMETROS*/
@@ -157,8 +163,73 @@
 }
 
 
-
-
-
-
+.conteiner-entorno{
+    display: grid;
+    grid-template-columns:  repeat(2, minmax(0, 1fr));
     
+}
+
+.texto-entorno{
+    background-color: #d8cebf;
+   
+    h4{
+        margin-top: 20%;
+        margin-left: 15%;
+        @extend %titulos;
+       
+    }
+    p{
+        width: 50%;
+        margin: 0% 0% 0% 15%;
+        @extend %texto;
+    }
+    a{
+        background-color: #7b9f8c;
+        border: #7b9f8c;
+        color:white;
+        width: 12rem;
+        margin: 8% 0% 0% 15%;
+        @extend %texto;
+    }
+}
+
+/*CEL*/
+@media (max-width: 576px) { 
+    
+    .conteiner-entorno{
+        display: grid;
+        grid-template-columns:  repeat(1, minmax(0, 1fr));
+        grid-auto-rows: 1fr;
+    }
+    
+    .img-entorno{
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .texto-entorno{
+
+        text-align: center;
+        h4{
+           
+           margin: 10% auto 8% auto;
+            text-align: center 
+            
+            
+        }
+        p{
+            
+            margin: auto;
+           
+        }
+        a{
+            background-color: #7b9f8c;
+            border: #7b9f8c;
+            color:white;
+            width: 12rem;
+            margin: 10% 10% 15% 10%;
+            
+        }
+    }
+  
+ }

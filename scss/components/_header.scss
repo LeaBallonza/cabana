@@ -10,7 +10,7 @@
 /* ESTILOS DEL LOGO*/
 .logo-header{
         width: 200px;
-        margin-left: 75px;
+        padding-left: 6%;
     }
 /* TIRO LA UL A LA DERECHA*/
 .lista1 {
@@ -49,14 +49,25 @@
 /*CEL*/
 @media (max-width: 576px) { 
     
-    .lista1 {
-      justify-content: center;
+
+    .nav-header{
+        display: flex;
+        
+        
+    }
+    .logo-header{
+        
+        padding-left: 30%;
+        display: flex;
+        align-items: center;
         
     }
 
-    .logo-header{
-        position: sticky;
-        width: 200px;
+    .lista1 {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         
     }
  }
