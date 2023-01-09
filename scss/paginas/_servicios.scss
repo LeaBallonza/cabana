@@ -86,8 +86,12 @@
 ul{
     padding-left: 5%;
     @extend %texto;
+    list-style-type: none;
 
     li{
+        
+        border-top: 0.2px dotted gray;
+         border-bottom: 0.2px dotted gray;
     }
  }
 }

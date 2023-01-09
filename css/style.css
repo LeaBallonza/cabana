@@ -150,6 +150,8 @@
 .footer-container .footer-cuadricula .col1 .footer-lista {
   list-style-type: none;
   padding: 0px;
+  display: flex;
+  flex-direction: column;
   /* DEFINO ESTILO ITEMS */
 }
 .footer-container .footer-cuadricula .col1 .footer-lista .footer-item {
@@ -227,6 +229,11 @@
   list-style-type: none;
   display: inline-block;
   /* float: right;*/
+}
+
+/*LOS ICONOS DE REDES EN EL FOOTER A LA DERECHA */
+.redes-footer {
+  text-align: end;
 }
 
 /*CEL*/
@@ -346,6 +353,7 @@
 .container-servicios-index {
   padding: 3% 15%;
   padding-bottom: 7%;
+  text-align: center;
 }
 .container-servicios-index .row-servicios-index .servicios-index-col {
   padding: 0 3%;
@@ -382,7 +390,7 @@
 
 /*DEFINO ESTILO CONSULTA*/
 .container-consultas-index {
-  padding: 3% 15% 0% 15%;
+  padding: 3% 15% 5% 15%;
   /*POR QUÉ NO ME CARGA EL BG IMG*/
   background-image: url("../../src/multimedia/Img/bg_verde_claro.jpg");
   /*TITULO PARAMETROS*/
@@ -401,16 +409,12 @@
   padding-bottom: 2%;
 }
 .container-consultas-index .formulario-row-button {
-  align-items: center;
-}
-.container-consultas-index .formulario-row-button {
   text-align: center;
-  background-color: red;
 }
 
 /*Color de fondo de los inputs del formulario y bordes negros*/
 .form-control {
-  background-color: #dfe0b6;
+  
   border: 1px solid;
 }
 
@@ -418,6 +422,13 @@
 .btn-azul {
   color: white;
   background-color: #142633;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.btn-azul:hover {
+  color: white;
+  background-color: #7b9f8c;
 }
 
 /*DEFINO ESTILO INSTAGRAM*/
@@ -468,9 +479,10 @@
 
 /*CEL*/
 @media (max-width: 576px) {
-  .titulo-1 {
-    font-size: 30px;
-    color: red;
+  .carousel-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px !important;
   }
   .conteiner-entorno {
     display: grid;
@@ -609,7 +621,13 @@
 }
 .body-servicios .container-servicios .servicios-col2 ul {
   padding-left: 5%;
+  list-style-type: none;
 }
+.body-servicios .container-servicios .servicios-col2 ul li {
+  border-top: 0.2px dotted gray;
+  border-bottom: 0.2px dotted gray;
+}
+
 /* PAGINA - FOTOS */
 /* CARATULA FOTOS */
 .caratula-fotos {
@@ -711,8 +729,7 @@
 }
 .contacto .contacto-row2 .formulario-row-button {
   padding-bottom: 15%;
-  /* CÓMO CENTRAR AUTOMATICAMENTE?*/
-  padding-left: 46%;
+  text-align: center;
 }
 .contacto .contacto-row2 .formulario-row-button .formulario.col {
   padding: 0% 15% 3% 15%;

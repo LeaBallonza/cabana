@@ -43,6 +43,7 @@
 .container-servicios-index{
     padding: 3% 15%;
     padding-bottom: 7%;
+    text-align: center;
     .row-servicios-index{
 
         .servicios-index-col{
@@ -87,7 +88,7 @@
 
 /*DEFINO ESTILO CONSULTA*/
 .container-consultas-index{
-    padding: 3% 15% 0% 15%;
+    padding: 3% 15% 5% 15%;
     
     /*POR QUÉ NO ME CARGA EL BG IMG*/
     background-image: url("../../src/multimedia/Img/bg_verde_claro.jpg");
@@ -109,13 +110,10 @@
     }
 
     /*DEFINO FORMATO BOTON*/
-    .formulario-row-button{
-      align-items: center;
-      
-     }
+   
      .formulario-row-button{
         text-align: center;
-        background-color: red;
+        
      }
 }
 /*Color de fondo de los inputs del formulario y bordes negros*/
@@ -128,7 +126,15 @@
  .btn-azul{
     color: white;
     background-color: #142633;
+    align-items: center;
+    margin-top: 2%;
  }
+ .btn-azul:hover{
+    color: white;
+    background-color: #7b9f8c;
+    
+ }
+ 
 /*DEFINO ESTILO INSTAGRAM*/
 
   /*ROW 1 PARÁMETROS*/
@@ -196,10 +202,12 @@
 /*CEL*/
 @media (max-width: 576px) { 
     
-    .titulo-1{
-        font-size: 30px;
-        color:red;
+    .carousel-text-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px !important;
     }
+
     .conteiner-entorno{
         display: grid;
         grid-template-columns:  repeat(1, minmax(0, 1fr));

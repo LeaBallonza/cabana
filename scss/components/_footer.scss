@@ -33,6 +33,8 @@
         .footer-lista{
             list-style-type: none;
             padding: 0px;
+            display: flex;
+            flex-direction: column;
             
             
             /* DEFINO ESTILO ITEMS */
@@ -153,6 +155,11 @@ ul{
 
 }
 
+/*LOS ICONOS DE REDES EN EL FOOTER A LA DERECHA */
+.redes-footer{
+text-align: end;
+}
+
 
 /*CEL*/
 @media (max-width: 576px) { 
@@ -161,4 +168,7 @@ ul{
        height: auto;
        color: nth($colores , 8);
    }
+
+   
+   
 }
