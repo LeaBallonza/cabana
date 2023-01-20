@@ -75,6 +75,15 @@
   background-color: #142633;
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-menu {
+  color: white;
+}
+
 /* ESTILOS DEL LOGO*/
 .logo-header {
   width: 200px;
@@ -86,11 +95,6 @@
   float: right;
   margin-right: 20px;
   margin-top: 26px;
-}
-
-/* LA PONGO EN LINEA*/
-.header-item {
-  display: inline-block;
 }
 
 /* DEFINO ESTILOS DE CADA ANCLA DE ESA UL */
@@ -111,8 +115,9 @@
 
 /*CEL*/
 @media (max-width: 576px) {
-  .nav-header {
+  .navbar-nav {
     display: flex;
+    text-align: center;
   }
   .logo-header {
     padding-left: 30%;
@@ -414,7 +419,7 @@
 
 /*Color de fondo de los inputs del formulario y bordes negros*/
 .form-control {
-  
+  background-color: #dfe0b6;
   border: 1px solid;
 }
 

@@ -26,11 +26,14 @@
     <!-- DEFINO HEADER, LE DOY UNA ETIQUETA <a> al logo para que al clickearse vaya al index. Luego va lista con los otros elementos de navegacion -->
         
     <header class="container/fluid "> 
-        <nav class="row nav-header">
+      <!--   <nav class="navbar navbar-expand-lg row nav-header">
             <div >
             <a href="index.html" class="logo-header">
                 <img src="./src/multimedia/Img/logo_header.png"
                     alt="Logo Cabaña Los Granados"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
             <ul class="  lista1">
                 <li class="header-item"> <a href="index.html">INICIO</a> </li>
                 <li class="header-item"> <a href="./src/Paginas/eventos.html">EVENTOS</a> </li>
@@ -44,6 +47,40 @@
             </ul>
         </div>
         </nav>
+-->
+<nav class="navbar nav-header navbar-expand-lg fixed-top ">
+  <div class="container-fluid">
+    <a class="navbar-brand logo-header" href="index.html"><img src="./src/multimedia/Img/logo_header.png"
+      alt="Logo Cabaña Los Granados"></a>
+    <button class="navbar-toggler btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon btn-menu"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header nav-header">
+        <a class="offcanvas-title" id="offcanvasNavbarLabel" href="index.html"><img src="./src/multimedia/Img/iso_header.png"
+          alt="Logo Cabaña Los Granados"></a>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body nav-header">
+        <ul class="navbar-nav flex-grow-1 pe-5">
+          
+            <li class="header-item"> <a href="index.html">INICIO</a> </li>
+            <li class="header-item"> <a href="./src/Paginas/eventos.html">EVENTOS</a> </li>
+            <li class="header-item"> <a href="./src/Paginas/servicios.html">SERVICIOS</a> </li>
+            <li class="header-item"> <a href="./src/Paginas/entorno.html">ENTORNO ÚNICO</a> </li>
+            <li class="header-item"> <a href="./src/Paginas/historia.html"> SITIO HISTÓRICO</a> </li>
+            <li class="header-item"> <a href="./src/Paginas/fotos.html">FOTOS</a> </li>
+            <li class="header-item"> <a href="./src/Paginas/contacto.html">CONTACTO</a> </li>
+                
+        </ul>
+           
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+        
     </header>
 
     <!-- WHATSAPP -->

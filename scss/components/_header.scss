@@ -5,8 +5,14 @@
 	
     background-color: #142633;
 }
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+} 
 
-
+.btn-menu{
+    color: white;
+}
 /* ESTILOS DEL LOGO*/
 .logo-header{
         width: 200px;
@@ -19,13 +25,7 @@
     margin-top:  26px;
     
 }
-/* LA PONGO EN LINEA*/
-.header-item{
-    display: inline-block;
-    
-}
 
-  
 
 /* DEFINO ESTILOS DE CADA ANCLA DE ESA UL */
 .header-item a{
@@ -50,8 +50,9 @@
 @media (max-width: 576px) { 
     
 
-    .nav-header{
+    .navbar-nav{
         display: flex;
+        text-align: center;
         
         
     }
