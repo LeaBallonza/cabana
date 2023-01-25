@@ -21,7 +21,7 @@
 }
 
 /* EXTENDS */
-.caratula-contacto, .caratula-fotos, .caratula-servicios, .caratula-historia {
+.caratula-contacto, .caratula-fotos, .caratula-servicios, .caratula-eventos, .caratula-entorno, .caratula-historia {
   height: 250px;
   background-position: center center;
   background-size: auto;
@@ -438,42 +438,36 @@
   text-align: center;
 }
 
+.img-planning {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.img-entorno {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*DEFINO ESTILO CONSULTA*/
 .container-consultas-index {
   padding: 3% 15% 5% 15%;
   /*POR QUÉ NO ME CARGA EL BG IMG*/
   background-image: url("../../src/multimedia/Img/bg_verde_claro.jpg");
+  text-align: center;
   /*TITULO PARAMETROS*/
-  /*DEFINO ESPACIO EN ROWS*/
-  /*DEFINO FORMATO BOTON*/
 }
 .container-consultas-index h4 {
   text-align: center;
   padding-bottom: 1%;
-}
-.container-consultas-index .formulario-row {
-  padding-bottom: 2%;
-}
-.container-consultas-index .formulario-row .formulario.col {
-  padding: 4%;
-  padding-bottom: 2%;
-}
-.container-consultas-index .formulario-row-button {
-  text-align: center;
-}
-
-/*Color de fondo de los inputs del formulario y bordes negros*/
-.form-control {
-  background-color: #dfe0b6;
-  border: 1px solid;
 }
 
 /*BOTON ENVIAR, COLOR DE FONDO Y LETRA*/
 .btn-azul {
   color: white;
   background-color: #142633;
-  align-items: center;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .btn-azul:hover {
@@ -524,7 +518,7 @@
   border: #7b9f8c;
   color: white;
   width: 12rem;
-  margin: 8% 0% 0% 15%;
+  margin: 8% 0% 5% 15%;
 }
 
 /*CEL*/
@@ -533,6 +527,11 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px !important;
+  }
+  .servicios-index-col2 {
+    padding: 0 3%;
+    border-left: 1px solid white !important;
+    border-right: 1px solid white !important;
   }
   .conteiner-entorno {
     display: grid;
@@ -574,7 +573,15 @@
 /* PAGINA HISTORIA */
 /* CARATULA HISTORIA */
 .caratula-historia {
-  background-image: url(../src/multimedia/Img/historia/slide_historia.jpg);
+  background-image: url(../src/multimedia/Img/historia/slide_sitio_historico.jpg);
+}
+
+.caratula-entorno {
+  background-image: url(../src/multimedia/Img/slide_entorno_unico.jpg);
+}
+
+.caratula-eventos {
+  background-image: url(../src/multimedia/Img/slide_eventos.jpg);
 }
 
 /* ESTILOS DE LA SECCIÓN hISTORIA */
@@ -655,17 +662,16 @@
   /*ESTILO DE LINK PAG WEB*/
   /*DEFINO PARAMETROS LISTA*/
 }
-.body-servicios .container-servicios .servicios-col2 img {
+.body-servicios .container-servicios .servicios-col2 .img-servicios {
   width: 20%;
+  margin-left: 5%;
+  margin-bottom: 3%;
 }
 .body-servicios .container-servicios .servicios-col2 h3 {
-  padding-left: 2%;
+  margin-left: 5%;
 }
 .body-servicios .container-servicios .servicios-col2 p, .body-servicios .container-servicios .servicios-col2 h4 {
-  padding-left: 2%;
-}
-.body-servicios .container-servicios .servicios-col2 p {
-  padding-bottom: 3%;
+  padding-left: 5%;
 }
 .body-servicios .container-servicios .servicios-col2 h4 {
   padding-bottom: 1%;
@@ -674,8 +680,9 @@
   text-decoration: none;
 }
 .body-servicios .container-servicios .servicios-col2 a h5 {
-  padding-left: 2%;
+  padding-left: 5%;
   color: #142633;
+  padding-bottom: 4%;
 }
 .body-servicios .container-servicios .servicios-col2 ul {
   padding-left: 5%;
@@ -684,6 +691,11 @@
 .body-servicios .container-servicios .servicios-col2 ul li {
   border-top: 0.2px dotted gray;
   border-bottom: 0.2px dotted gray;
+}
+
+.iconos-servicios {
+  width: 25px !important;
+  margin: 10px 10px 10px 10px;
 }
 
 /* PAGINA - FOTOS */

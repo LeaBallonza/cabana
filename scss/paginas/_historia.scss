@@ -5,7 +5,15 @@
     /* CARATULA HISTORIA */
     .caratula-historia{
         @extend %caratulas;
-        background-image: url(../src/multimedia/Img/historia/slide_historia.jpg);
+        background-image: url(../src/multimedia/Img/historia/slide_sitio_historico.jpg);
+       }
+       .caratula-entorno{
+        @extend %caratulas;
+        background-image: url(../src/multimedia/Img/slide_entorno_unico.jpg);
+       }
+       .caratula-eventos{
+        @extend %caratulas;
+        background-image: url(../src/multimedia/Img/slide_eventos.jpg);
        }
     
     /* ESTILOS DE LA SECCIÓN hISTORIA */
