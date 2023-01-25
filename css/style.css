@@ -76,8 +76,8 @@
 }
 
 .navbar-nav {
-  display: flex;
-  justify-content: end;
+  margin-left: auto;
+  margin-right: 6%;
 }
 
 .btn-menu {
@@ -92,7 +92,6 @@
 
 /* TIRO LA UL A LA DERECHA*/
 .lista1 {
-  float: right;
   margin-right: 20px;
   margin-top: 26px;
 }
@@ -113,21 +112,57 @@
   padding: 8px;
 }
 
-/*CEL*/
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .navbar-nav {
     display: flex;
     text-align: center;
   }
   .logo-header {
-    padding-left: 30%;
-    display: flex;
-    align-items: center;
+    width: 100px;
+    display: block;
+    margin: auto;
+  }
+  .offcanvas-title {
+    display: block;
+    margin: auto;
   }
   .lista1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .img-titulo {
+    content: url("../src/multimedia/Img/iso_header.png");
+  }
+  .header-item {
+    padding-top: 1rem;
+  }
+}
+/*CEL*/
+@media (max-width: 599px) {
+  .navbar-nav {
+    display: flex;
+    text-align: center;
+  }
+  .logo-header {
+    width: 60px;
+    display: block;
+    margin: auto;
+  }
+  .offcanvas-title {
+    display: block;
+    margin: auto;
+  }
+  .lista1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .img-titulo {
+    content: url("../src/multimedia/Img/iso_header.png");
+  }
+  .header-item {
+    padding-top: 1rem;
   }
 }
 /*FOOTER*/
@@ -242,11 +277,21 @@
 }
 
 /*CEL*/
-@media (max-width: 576px) {
+@media (max-width: 599px) {
   .footer-container {
     background-color: #142633;
-    height: auto;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-footer {
+    margin: auto;
+  }
+  .redes-footer {
+    display: flex;
+    margin: auto;
+    margin-right: 40%;
+    margin-bottom: 15px;
   }
 }
 /* ESTILOS DE LA SECCIÓN CARROUSEL */
@@ -516,6 +561,14 @@
     color: white;
     width: 12rem;
     margin: 10% 10% 15% 10%;
+  }
+}
+@media (max-width: 991px) {
+  .img-entorno {
+    max-width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* PAGINA HISTORIA */

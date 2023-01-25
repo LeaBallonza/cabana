@@ -245,3 +245,16 @@
     }
   
  }
+
+//TABLET
+ @media (max-width: 991px) { 
+
+    //El tamaño de la foto en tablet sino lo configuro rompe los margenes de index
+    
+    .img-entorno{
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+  
+ }
