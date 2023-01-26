@@ -1,3 +1,5 @@
+
+//FOOTER
 const mediaQueryCel = window.matchMedia('(max-width: 599px)')
 const mediaQueryNbk = window.matchMedia('(min-width: 600px)')
 
@@ -14,12 +16,12 @@ if (mediaQueryNbk.matches) {
       <h3>Sitio</h3>
       <ul class="footer-lista">
           <li class="footer-item"> <a href="index.html">INICIO</a> </li>
-          <li class="footer-item"> <a href="./src/Paginas/eventos.html">EVENTOS</a> </li>
-          <li class="footer-item"> <a href="./src/Paginas/servicios.html">SERVICIOS</a> </li>
-          <li class="footer-item"> <a href="./src/Paginas/entorno.html">ENTORNO ÚNICO</a> </li>
-          <li class="footer-item"> <a href="./src/Paginas/historia.html"> SITIO HISTÓRICO</a> </li>
-          <li class="footer-item"> <a href="./src/Paginas/fotos.html">FOTOS</a> </li>
-          <li class="footer-item"> <a href="./src/Paginas/contacto.html">CONTACTO</a> </li>
+          <li class="footer-item"> <a href="eventos.html">EVENTOS</a> </li>
+          <li class="footer-item"> <a href="servicios.html">SERVICIOS</a> </li>
+          <li class="footer-item"> <a href="entorno.html">ENTORNO ÚNICO</a> </li>
+          <li class="footer-item"> <a href="historia.html"> SITIO HISTÓRICO</a> </li>
+          <li class="footer-item"> <a href="fotos.html">FOTOS</a> </li>
+          <li class="footer-item"> <a href="contacto.html">CONTACTO</a> </li>
       </ul>
   </div>
   <div class="col-xs-7 col-md-7 col-sm-7 col-lg-7 col-xl-7.col-xxl-7 col2">
@@ -61,7 +63,7 @@ if (mediaQueryCel.matches) {
     footerId.innerHTML += `<nav class=" footer-container">
     
       <a class="navbar-brand logo-footer" href="/">
-      <img src="./src/multimedia/Img/logo_header.png"
+      <img src="./src/multimedia/Img/iso_header.png"
       alt="Logo Cabaña Los Granados"></a>
 
       <ul class="redes-footer">
@@ -72,3 +74,15 @@ if (mediaQueryCel.matches) {
   </nav>`
    
   }
+
+  //modal
+
+  
+ document.addEventListener("click",function (e){
+    if(e.target.classList.contains("fotos-item")){
+          const src = e.target.getAttribute("src");
+          document.querySelector(".modal-img").src = src;
+          const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+          myModal.show();
+    }
+  })
