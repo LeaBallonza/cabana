@@ -59,6 +59,8 @@ if (mediaQueryNbk.matches) {
 if (mediaQueryCel.matches) {
     // Then trigger an alert
     console.log('Media Query CEL!')
+
+    
   
     footerId.innerHTML += `<nav class=" footer-container-cel">
 
