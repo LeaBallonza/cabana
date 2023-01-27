@@ -278,17 +278,16 @@
 
 /*CEL*/
 @media (max-width: 599px) {
-  .footer-container {
+  .footer-container-cel {
     background-color: #142633;
     color: #fff;
     display: flex;
-  }
-  .logo-footer {
-    margin: auto auto auto 10%;
+    justify-content: space-around;
+    padding: 3% 0% 2% 0%;
   }
   .redes-footer {
     display: flex;
-    margin: 15px 0px 15px 105%;
+    margin-left: 20%;
   }
 }
 /* ESTILOS DE LA SECCIÓN CARROUSEL */

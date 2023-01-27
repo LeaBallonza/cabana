@@ -60,17 +60,19 @@ if (mediaQueryCel.matches) {
     // Then trigger an alert
     console.log('Media Query CEL!')
   
-    footerId.innerHTML += `<nav class=" footer-container">
-    
+    footerId.innerHTML += `<nav class=" footer-container-cel">
+
       <a class="navbar-brand logo-footer" href="/">
       <img src="./src/multimedia/Img/iso_header.png"
       alt="Logo Cabaña Los Granados"></a>
-
+      
+    
       <ul class="redes-footer">
       <li><a href="https://twitter.com/?lang=es"><img src="./src/multimedia/Img/home/ico_TW_footer.png" alt="Redes sociales Cabaña Los Granados - Twitter"></a></li>
       <li><a href="https://www.facebook.com/"><img src="./src/multimedia/Img/home/ico_FB_footer.png" alt="Redes sociales Cabaña Los Granados - Facebook"></a></li>
       <li><a href="https://www.instagram.com"><img src="./src/multimedia/Img/home/ico_IG_footer.png" alt="Redes sociales Cabaña Los Granados - Instagram"></a></li>
       </ul>
+      
   </nav>`
    
   }

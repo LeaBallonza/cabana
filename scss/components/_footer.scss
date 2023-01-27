@@ -163,24 +163,20 @@ text-align: end;
 
 /*CEL*/
 @media (max-width: 599px) { 
-    .footer-container{
+    .footer-container-cel {
        background-color: nth($colores, 1);
        
        color: nth($colores , 8);
        display: flex;
+       justify-content: space-around;
+       padding: 3% 0% 2% 0%;
        
        
    }
 
-   .logo-footer{
-
-    margin: auto auto auto 10%;
-    
-    
-}
 .redes-footer{
     display: flex;
-    margin: 15px 0px 15px 105%;
     
+    margin-left: 20%;
     }
 }

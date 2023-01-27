@@ -92,66 +92,72 @@
        <div class="row contacto-row2">
         <div><h4>Cotizá tu evento</h4></div>
          
-        <div class="container-fluid">
-               <!-- NOMBRE Y APELLIDO -->
-               <div class="row formulario-row">
-                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
-                    <input type="text" class="form-control" placeholder="Nombre">
-                   </div>
-                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
-                    <input type="text" class="form-control" placeholder="Apellido">
-                   </div>
-               </div>
-               <!-- TELEFONO - EMAIL -->
-               <div class="row formulario-row">
-                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
-                    <input type="number" class="form-control" placeholder="Teléfono">
-                   </div>
-                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
-                    <input type="text" class="form-control" placeholder="E-mail">
-                   </div>
-               </div>
-               <!-- EMPRESA - DIRECCION -->
-               <div class="row formulario-row">
-                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
-                    <input type="text" class="form-control" placeholder="Empresa (Opcional)">
-                   </div>
-                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
-                    <input type="text" class="form-control" placeholder="Dirección">
-                   </div>
-               </div>
-               <!-- FECHA - CANT INVITADOS -->
-               <div class="row formulario-row">
-                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
-                    <input type="text" class="form-control" placeholder="Fecha">
-                   </div>
-                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
-                    <select class="form-select" aria-label="cantidad de invitados">
-                        <option selected="">Cantidad de invitados
-                        <option value="2">20 a 50</option>
-                        <option value="3">50 a 100</option>
-                        <option value="4">+ 100</option>
-                      </select>
-                   </div>
-               </div>
-               <!-- DETALLES DEL EVENTO -->
-               <div class="row formulario-row">
-                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 formulario-col">
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Detalles del evento" id="floatingTextarea" style="height: 100px"></textarea>
-                        <label for="floatingTextarea">Detalles del evento</label>
-                      </div>
-                   </div>
-               </div>
-               <!-- BOTON -->
-               <div class="row formulario-row-button">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 formulario-col">
-                    <div class="boton-formulario"><button class="btn btn-secondary button-primary" type="submit">ENVIAR</button></div>
-                  </div>
-               </div>
-           </div>
-       </div>
+      <div class="container-fluid">
 
+          <form id="contact" action="contacto.php" method="post">
+               <!-- NOMBRE Y APELLIDO -->
+            <div class="row formulario-row">
+                <fieldset class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
+                 <input type="text" class="form-control" name="nombre" placeholder="Nombre" requiered="">
+                </fieldset>
+                <fieldset class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
+                 <input type="text" class="form-control" name="lastname" placeholder="Apellido" requiered="">
+                </fieldset>
+            </div>
+            <!-- TELEFONO - EMAIL -->
+            <div class="row formulario-row">
+                <fieldset class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
+                 <input type="number" class="form-control" name="cel" placeholder="Teléfono" requiered="">
+                </fieldset>
+                <fieldset class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
+                 <input type="email" class="form-control" name="email" placeholder="E-mail" requiered="">
+                </fieldset>
+            </div>
+            <!-- EMPRESA - DIRECCION -->
+            <div class="row formulario-row">
+                <fieldset class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
+                 <input type="text" class="form-control" name="empresa" placeholder="Empresa (Opcional)">
+                </fieldset>
+                <fieldset class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
+                 <input type="text" class="form-control" name="direccion" placeholder="Dirección (Opcional)">
+                </fieldset>
+            </div>
+            <!-- FECHA - CANT INVITADOS -->
+            <div class="row formulario-row">
+                <fieldset class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
+                 <input type="text" class="form-control" name="fecha" placeholder="Fecha">
+                </fieldset>
+                <fieldset class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 formulario-col">
+                 
+                 <select type="text" name="invitados" class="form-select" aria-label="cantidad de invitados">
+                     <option selected="">Cantidad de invitados
+                     <option value="20/50">20 a 50</option>
+                     <option value="50/100">50 a 100</option>
+                     <option value="+100">+ 100</option>
+                   </select>
+                </fieldset>
+            </div>
+            <!-- DETALLES DEL EVENTO -->
+            <div class="row formulario-row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 formulario-col">
+                 <fieldset class="form-floating">
+                     <textarea class="form-control" name="mensaje" requiered="" placeholder="Detalles del evento" id="floatingTextarea" style="height: 100px"></textarea>
+                     <label for="floatingTextarea">Detalles del evento</label>
+                   </fieldset>
+                </div>
+            </div>
+            <!-- BOTON -->
+            <div class="row formulario-row-button">
+             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 formulario-col">
+                 <div class="boton-formulario"><button class="btn btn-secondary button-primary" name="submit" type="submit" id="contact-submit" data-submit="...Enviar">ENVIAR</button></div>
+               </div>
+            </div>
+          </form>
+      </div>
+          
+         </div>
+       </div>
+  
        <!-- COLUMNA 3 MAPA -->
        <div class="row contacto-row3">
            <div class="col-xs-12 col-sm-12 col-3d-12 col-lg-12 col-xl-12 col-xxl-12 contacto-col3">
@@ -165,7 +171,7 @@
 
 
 <!--footer-->
-<footer class=" footer-container" id="footerId"></footer>
+<footer class="footer-container" id="footerId"></footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
  <script src="/js/main.js"></script>
