@@ -19,9 +19,9 @@
         padding: 5% 15% 2% 15%;
 
         /*TITULO PARAMETROS*/
-        h4{
+        h3{
             text-align: center;
-            @extend %titulos;
+            @extend  %subtitulos;
             padding-bottom: 1%;
         }
 
@@ -51,9 +51,9 @@
     padding: 0% 20%;
 
     /*TITULO PARAMETROS*/
-    h4{
+    h3{
         text-align: center;
-        @extend %titulos;
+        @extend  %subtitulos;
         padding-bottom: 3%;
     }
     /*DEFINO FORMULARIO INTERNO*/

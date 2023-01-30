@@ -45,13 +45,13 @@
   font-size: 16px;
 }
 
-.contacto .contacto-row2 h4, .contacto .contacto-row1 h4, .body-servicios .container-servicios .servicios-col2 h3, .historia .historia-container .titulo-historia, .texto-entorno h4, .container-ig .row-ig1 h4, .container-consultas-index h4, .bienvenidos-body .bienvenidos-container .bienvenidos-titulo, .carousel-inner .titulo-slider {
+.body-servicios .container-servicios .servicios-col2 h3, .historia .historia-container .titulo-historia, .texto-entorno h4, .container-ig .row-ig1 h4, .container-consultas-index h4, .bienvenidos-body .bienvenidos-container .bienvenidos-titulo, .carousel-inner .titulo-slider {
   font-family: "DM Serif Display";
   font-weight: 400;
   font-size: 48px;
 }
 
-.body-fotos .container-tab .pestaña, .body-servicios .container-servicios .servicios-col2 h4, .historia .historia-container .subtitulo-historia, .container-servicios-index .row-servicios-index .servicios-index-col2 h4, .container-servicios-index .row-servicios-index .servicios-index-col h4 {
+.contacto .contacto-row2 h3, .contacto .contacto-row1 h3, .body-fotos .container-tab .pestaña, .body-servicios .container-servicios .servicios-col2 h4, .historia .historia-container .subtitulo-historia, .container-servicios-index .row-servicios-index .servicios-index-col2 h4, .container-servicios-index .row-servicios-index .servicios-index-col h4 {
   font-family: "Encode Sans Semi Condensed";
   font-weight: 700;
   font-size: 20px;
@@ -69,6 +69,13 @@
   font-size: 18px;
 }
 
+@media (max-width: 599px) {
+  .caratula-contacto, .caratula-fotos, .caratula-servicios, .caratula-eventos, .caratula-entorno, .caratula-historia {
+    height: 250px;
+    background-position: center center;
+    background-size: 400%;
+  }
+}
 /*HEADER*/
 /* DEFINO COLOR Y ALTURA DEL NAV*/
 .nav-header {
@@ -377,13 +384,13 @@
   background-size: auto;
   background-position: center center;
   height: 450px;
+  padding-top: 10%;
   /* UBICACIÓN ISO LOS GRANADOS EN SECTION BIENVENIDOS */
   /* UBICACIÓN TÍTULO SECCIÓN BIENVENIDOS */
   /* UBICACIÓN PÁRRAFO SECCIÓN BIENVENIDOS */
 }
 .bienvenidos-body .bienvenidos-container .bienvenido-logo {
-  justify-items: center;
-  margin: 8% 0% 0% 48.5%;
+  text-align: center;
 }
 .bienvenidos-body .bienvenidos-container .bienvenidos-titulo {
   margin-top: 1%;
@@ -397,8 +404,7 @@
 
 /*DEFINO PARAMETROS SERVICIOS INDEX*/
 .container-servicios-index {
-  padding: 3% 15%;
-  padding-bottom: 7%;
+  padding: 10% 10% 8%;
   text-align: center;
 }
 .container-servicios-index .row-servicios-index .servicios-index-col {
@@ -519,13 +525,23 @@
 
 /*CEL*/
 @media (max-width: 599px) {
+  .bienvenidos-container {
+    padding-top: 18% !important;
+  }
   .carousel-text-container {
     display: flex;
     flex-direction: column;
     margin-top: 10px !important;
   }
+  /*DEFINO PARAMETROS SERVICIOS INDEX*/
+  .container-servicios-index {
+    padding: 15% 15%;
+  }
+  .titulo-servicio {
+    padding: 5%;
+  }
   .servicios-index-col2 {
-    padding: 0 3%;
+    padding: 15% 3% !important;
     border-left: 1px solid white !important;
     border-right: 1px solid white !important;
   }
@@ -611,6 +627,8 @@
   padding-top: 3%;
 }
 .historia .fotos-historia {
+  display: flex;
+  flex-direction: row;
   padding: 0 2% 8% 2%;
 }
 .historia .fotos-historia .col-fotos {
@@ -620,11 +638,20 @@
   width: 100%;
 }
 
+@media (max-width: 599px) {
+  .fotos-historia {
+    display: flex;
+    flex-direction: column !important;
+    padding: 0 2% 8% 2%;
+  }
+  .fotos-historia .col-fotos {
+    padding: 2% 1% !important;
+  }
+}
 /* PAGINA - SERVICIOS*/
 /* TAMAÑO CARATULA SERVICIOS */
 .caratula-servicios {
   background-image: url(../src/multimedia/Img/servicios/slide_servicios.jpg);
-  margin-bottom: 50px;
 }
 
 .body-servicios {
@@ -635,12 +662,10 @@
   /*  TAMAÑO DEL CONTENEDOR DE SERVICIOS */
   /*DEFINO PARAMETROS COL 2*/
 }
-.body-servicios .container-servicios .row-servicios1, .body-servicios .container-servicios .row-servicios2 {
+.body-servicios .container-servicios .row-servicios {
+  display: flex;
   padding: 7% 0 3% 0;
   border-bottom: 2px solid #142633;
-}
-.body-servicios .container-servicios .row-servicios3 {
-  padding: 7% 0 3% 0;
 }
 .body-servicios .container-servicios .servicios-col1 {
   /*DEFINO PROPIEDADES IMAGEN*/
@@ -694,6 +719,16 @@
   margin: 10px 10px 10px 10px;
 }
 
+@media (max-width: 599px) {
+  .caratula-servicios {
+    margin-bottom: 50px;
+  }
+  .row-servicios {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 0 3% 0;
+  }
+}
 /* PAGINA - FOTOS */
 /* CARATULA FOTOS */
 .caratula-fotos {
@@ -768,7 +803,7 @@
   /*TITULO PARAMETROS*/
   /*DIRECCIÓN TEL, REDES Y MAIL PARÁMETROS*/
 }
-.contacto .contacto-row1 h4 {
+.contacto .contacto-row1 h3 {
   text-align: center;
   padding-bottom: 1%;
 }
@@ -792,7 +827,7 @@
   /*DEFINO FORMULARIO INTERNO*/
   /*DEFINO FORMATO BOTON*/
 }
-.contacto .contacto-row2 h4 {
+.contacto .contacto-row2 h3 {
   text-align: center;
   padding-bottom: 3%;
 }

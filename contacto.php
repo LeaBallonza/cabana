@@ -56,7 +56,7 @@ $mail->AltBody = "{$mensaje} \n\n Formulario de ejemplo By LB"; // Texto sin for
 
 $estadoEnvio = $mail->Send(); 
 if($estadoEnvio){
-    echo "El correo fue enviado correctamente.";
+    echo "<h4> ¡Mail enviado exitosamente!</h4>";
 } else {
     echo "Ocurrió un error inesperado.";
 }

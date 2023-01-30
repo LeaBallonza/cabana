@@ -9,7 +9,7 @@
 .caratula-servicios {
     @extend %caratulas;
     background-image: url(../src/multimedia/Img/servicios/slide_servicios.jpg);
-    margin-bottom: 50px;
+    
 }
     
 .body-servicios{
@@ -22,13 +22,12 @@
     
     
     /*  TAMAÑO DEL CONTENEDOR DE SERVICIOS */
-    .row-servicios1, .row-servicios2{
+    .row-servicios{
+        display: flex;
         padding: 7% 0 3% 0;
         border-bottom: 2px solid #142633;
     }
-    .row-servicios3{
-        padding: 7% 0 3% 0;
-    }
+   
 
     .servicios-col1{
         
@@ -107,4 +106,19 @@ ul{
     width: 25px !important;
     margin: 10px 10px 10px 10px;
 
+}
+
+
+//CEL
+
+@media (max-width: 599px) {
+.caratula-servicios {
+    margin-bottom: 50px;
+}
+    
+    .row-servicios{
+        display: flex;
+        flex-direction: column;
+        padding: 7% 0 3% 0;
+}
 }

@@ -10,14 +10,12 @@
         background-size: auto;
         background-position: center center;
         height: 450px;
-
+        padding-top: 10%;
     
      
         /* UBICACIÓN ISO LOS GRANADOS EN SECTION BIENVENIDOS */
         .bienvenido-logo{
-         justify-items: center;
-         margin: 8% 0% 0% 48.5%;
-         
+             text-align: center;
         }
         
         /* UBICACIÓN TÍTULO SECCIÓN BIENVENIDOS */
@@ -41,8 +39,8 @@
 /*DEFINO PARAMETROS SERVICIOS INDEX*/
 
 .container-servicios-index{
-    padding: 3% 15%;
-    padding-bottom: 7%;
+    padding: 10% 10% 8% ;
+   
     text-align: center;
     .row-servicios-index{
 
@@ -194,15 +192,28 @@
 
 /*CEL*/
 @media (max-width: 599px) { 
-    
+    .bienvenidos-container{
+      
+        padding-top: 18% !important;
+    }
+
     .carousel-text-container{
         display: flex;
         flex-direction: column;
         margin-top: 10px !important;
     }
 
+    /*DEFINO PARAMETROS SERVICIOS INDEX*/
+
+.container-servicios-index{
+    padding: 15% 15%;
+   }
+  
+.titulo-servicio{
+    padding: 5%;
+}
     .servicios-index-col2{
-        padding: 0 3%;
+        padding: 15% 3% !important;
       
          border-left: 1px solid white !important;
          border-right: 1px solid white !important;

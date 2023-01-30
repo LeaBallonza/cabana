@@ -50,3 +50,13 @@
     font-weight: 430;
     font-size: 18px;
     }
+
+    //CEL
+    @media (max-width: 599px) {
+        %caratulas{
+            height: 250px;
+            background-position: center center;
+            background-size: 400%;
+            
+        }
+    }
